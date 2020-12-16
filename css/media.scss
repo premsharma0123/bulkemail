@@ -538,11 +538,19 @@
         margin-top: 16px;
     }    
     .Login_wrp .user_options-forms {
-        transform: translate(41px, -13rem);
+        transform: translate(23px, -14rem);
+        width: 90%;
     }
     .Login_wrp .user_options-registered {
         padding: 26rem 15px 1rem !important;
         margin: 0 0 1rem;
     }
     //-----login---end--here---//
+}
+
+@media only screen and(max-width:320px){
+    .Login_wrp .user_options-forms {
+        transform: translate(15px, -13rem);
+        width: 90%;
+    }
 }
