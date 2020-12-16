@@ -7,6 +7,29 @@
         bottom: -1px;
         overflow: hidden;      
     }
+
+    //--mailing-list----//
+
+    #EmailService_wrapper .Main_Campaign .Campaign_content .CampL1 ul li.Camp_Item1 a {
+        margin: 4px 0 4px 8px;
+        font-size: 14px;
+    }
+    #EmailService_wrapper .Main_Campaign .Campaign_content .CampL1 ul li.Camp_Item1 .camp_list {
+        top: 71px;
+        left: 9px;
+    }
+    #EmailService_wrapper .Main_Campaign .Campaign_content .CampL1 ul li a {
+        padding-left: 14px;
+    }
+    #EmailService_wrapper .Main_Campaign .Campaign_content .CampL1 ul li.Camp_Item1 a {
+        margin: 4px 5px 4px;
+        font-size: 14px;
+        padding: 1px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    //end-here--/
 }
 @media only screen and (max-width: 1200px){
     .container{
