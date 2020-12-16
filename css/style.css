@@ -232,6 +232,7 @@ header nav .Right_side .Login_wrapper {
   -webkit-box-align: inherit;
       -ms-flex-align: inherit;
           align-items: inherit;
+  display: none;
 }
 
 header nav .Right_side .Login_wrapper .Login-content {
