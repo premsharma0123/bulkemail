@@ -2484,6 +2484,21 @@ header{
     background: #fff;
     //background: linear-gradient(150deg, #281483 15%, #8f6ed5 70%, #d782d9 94%);
     border-radius: 3px;
+    position: relative;
+    a.close1 {
+        position: absolute;
+        top: 17px;
+        left: 31px;
+        font-size: 22px;
+        text-decoration: none;
+        color: #6c757d;
+        transition: $transition;
+        &:hover{
+            transition: $transition;
+            color: #000000;
+            transform: rotate(360deg);
+        }
+    }
   }
   
   /**
