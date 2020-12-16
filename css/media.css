@@ -535,10 +535,10 @@
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 375px) {
   .Login_wrp .user_options-forms {
-    -webkit-transform: translate(15px, -13rem);
-            transform: translate(15px, -13rem);
+    -webkit-transform: translate(18px, -14rem);
+            transform: translate(18px, -14rem);
     width: 90%;
   }
 }
