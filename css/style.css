@@ -5944,6 +5944,9 @@ canvas#nokey {
     z-index: 2;
     width: 500px;
   }
+  .Drop_main_wrp {
+    display: none;
+  }
   .user_options-unregistered, .user_options-registered {
     width: 100% !important;
   }
