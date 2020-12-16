@@ -303,12 +303,12 @@
         margin: 0 auto;
         max-width: 1070px!important;
     }
-    .Drop_main_wrp .Drop_box_wrp {
-        left: 142px;
-        top: 24px!important;
-        z-index: 2;
-        width: 500px!important;
-    }
+    // .Drop_main_wrp .Drop_box_wrp {
+    //     left: 142px;
+    //     top: 24px!important;
+    //     z-index: 2;
+    //     width: 500px!important;
+    // }
     // .user_options-unregistered, .user_options-registered {
     //     width: 100%!important;
     // }
@@ -339,17 +339,39 @@
         margin: 0 0 1rem;
     }
     .Login_wrp .user_options-text{
-        margin: 3rem 0;
+        margin: 1rem 0 1rem;    
     }
     .Login_wrp .user_options-forms {
         position: absolute;
         top: 50%;
-        left: -376px;
+        left: 0px;
         width: 80%;
+        transform: translate(54px, -13rem);
     }
-    // .user_options-forms.bounceLeft {
-    //     left: 60px;
-    // }
+    .Login_wrp .user_options-forms .forms_buttons-action{
+        padding: .7rem 1.4rem;
+        font-size: 15px;
+    }
+    .Login_wrp .user_registered-login, .Login_wrp .user_unregistered-signup {
+        padding: 0.8rem 1.2rem;
+        font-size: 13px;
+    }
+    .Login_wrp .user_options-forms{
+        box-shadow: 2px 0 7px #99999957;
+    }
+    @keyframes bounceRight{
+        0%,100%{
+            display: none;
+        }
+    }
+    @keyframes bounceLeft{
+        0%,100%{
+            display: none;
+        }
+    }
+    .Login_wrp::before{
+        display: none;
+    }
 }
 
 @media only screen and(max-width:480px){
@@ -493,4 +515,24 @@
             }
         }
     }
+
+
+    //-----login----page-------//
+
+    .Login_wrp .user_options-unregistered {
+        padding: 1rem 15px 2rem;
+        margin: 0rem 0 0;
+    }
+    .Login_wrp .user_registered-title, .Login_wrp .user_unregistered-title {
+        margin-bottom: 9px;
+        font-size: 1.2rem;
+        line-height: 1em;
+    }
+    .Login_wrp .user_registered-title {
+        margin: 3rem 0 .9rem!important;
+    }
+    .Login_wrp .user_registered-login, .Login_wrp .user_unregistered-signup {
+        margin-top: 16px;
+    }    
+    //-----login---end--here---//
 }
