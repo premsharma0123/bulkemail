@@ -46,6 +46,18 @@ $(document).ready(function(){
           $(".static_UnSb_page").fadeToggle("slow");
         });
         //----
+           // ----
+           $(".main-bar").click(function(){
+            $(".ul01").fadeToggle("slow");
+            $(".nav-item").fadeToggle("slow");
+            // $(".CampL2").css("padding"," 0 !important");
+          });
+          
+          $(".closebtn").click(function(){
+            $(".ul01").fadeToggle("slow");
+            $(".nav-item").fadeToggle("slow");
+          });
+          //----
           // ----
           $("#MailSelect").click(function(){
             $(".M_emails").fadeToggle("slow");
@@ -217,3 +229,25 @@ loginButton.addEventListener('click', () => {
   userForms.classList.remove('bounceLeft')
   userForms.classList.add('bounceRight')
 }, false)
+
+
+
+
+// -------nav---part----//
+function openNav() {
+  var sidebar =  document.querySelectorAll("#sidebar");
+  var c2 = document.querySelectorAll(".CampL2");
+  var sift  =    document.getElementById("Sift1");//.style.marginLeft = "250px";
+    sidebar[0].style = "width:250px !important";
+   // debugger
+  //   c2.style.padding="2rem 0 0 1rem";
+    sift.style ="margin-left :250px";
+    
+  }
+  
+  function closeNav() {
+    document.getElementById("sidebar").style.width = "0";
+  var sift  =  document.getElementById("Sift1");//.style.marginLeft= "13px";
+  //    sift.style ="padding-top : 0rem !important";
+     sift.style = "margin-left : 13px"
+  }

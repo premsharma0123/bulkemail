@@ -32,7 +32,7 @@
                     
                    </div>
                    <div class="Right_side  Nv_cmn">
-                       <ul class="m-0">
+                       <ul class="m-0 ul01">
                            <li class="Send_Sms"><a href="#" class="hvr-underline-from-left">Send Sms</a></li>
                            <li><a href="#" class="UserPro" title="profile">P</a></li>
                            <!--user---profile -->
@@ -58,6 +58,11 @@
                             </div>
                             <!-- end---here -->
                        </ul>
+                       <div class="main-bar" class="openbtn" onclick="openNav()">
+                        <div class="a1"></div>
+                        <div class="b1"></div>
+                        <div class="c1"></div>
+                    </div>
                    </div>
                 </nav>
             </div>
@@ -66,9 +71,11 @@
     <section class="Main_Campaign">
      <div class="container-fluid pl-0 ml-0">
          <div class="Campaign_content">
-             <div class="CampL1 Camp_cmn02" >
+            <div class="CampL1 Camp_cmn02" id="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                  <ul>
-                     <li class="Camp_Item1"><a href="AddCamp.html">Create a campaign
+                     <li class="Camp_Item1">
+                         <a href="AddCamp.html">Create a campaign
                         <i class="fas fa-chevron-down text-white Camp_i01"></i>
                      </a> 
                      <div class="camp_list">
@@ -78,7 +85,7 @@
                          </ul>
                      </div>
                     </li>
-                     <li class="Camp_Item2"><a href="mailinglist.html">
+                     <li class="Camp_Item2"><a href="#">
                         <i class="far fa-address-book"></i>Mailing lists</a></li>
                      <li class="Camp_Item3"><a href="emailservice.html">
                         <i class="fas fa-upload"></i>My Campaigns</a></li>
@@ -94,7 +101,7 @@
                         <i class="fas fa-money-check"></i>pricing Plans</a></li>
                  </ul>
              </div>
-             <div class="CampL2 Camp_cmn02">
+             <div class="CampL2 Camp_cmn02" id="Sift1">
                    <div class="Camp_heading">
                        <a href="mailinglist.html" class="m1"><i class="fas fa-long-arrow-alt-left pr-1"></i> Mailing list</a>
                        <h2>Manage Inactive Contacts</h2>

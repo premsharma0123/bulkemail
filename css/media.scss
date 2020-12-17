@@ -9,26 +9,60 @@
     }
 
     //--mailing-list----//
-
-    #EmailService_wrapper .Main_Campaign .Campaign_content .CampL1 ul li.Camp_Item1 a {
-        margin: 4px 0 4px 8px;
-        font-size: 14px;
+    #EmailService_wrapper{
+        .Main_Campaign{
+            .Campaign_content{
+                .CampL1{
+                    ul{
+                        li{
+                            a {
+                                padding-left: 14px;
+                                display: inline-block;
+                            }
+                        }
+                        li.Camp_Item1{
+                            a{
+                                margin: 4px 5px 4px;
+                                font-size: 14px;
+                                padding: 1px 5px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                        }
+                        li.Camp_Item {
+                            .camp_list{
+                                top: 71px;
+                                left: 9px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .Left_side {
+            width: 70%!important;
+        }
+        .Right_side{
+            width: 23%!important;
+        }
+       
     }
-    #EmailService_wrapper .Main_Campaign .Campaign_content .CampL1 ul li.Camp_Item1 .camp_list {
-        top: 71px;
-        left: 9px;
-    }
-    #EmailService_wrapper .Main_Campaign .Campaign_content .CampL1 ul li a {
-        padding-left: 14px;
-    }
-    #EmailService_wrapper .Main_Campaign .Campaign_content .CampL1 ul li.Camp_Item1 a {
-        margin: 4px 5px 4px;
-        font-size: 14px;
-        padding: 1px 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+    
+    //---incative--page----//
+    // .Inactive_page_wrapper{
+    //     .Campaign_content{
+    //         .CampL2 {
+    //             .Camp_heading {
+    //                 padding: 2rem 0 0;
+    //                 h2 {
+    //                     font-size: 1.4rem !important;
+    //                     padding: 1rem 0 0;
+    //                 }
+    //             }
+    //        }
+    //    }
+    // }
     //end-here--/
 }
 @media only screen and (max-width: 1200px){
@@ -64,6 +98,23 @@
     .Drop_main_wrp .Drop_box_wrp {
         left: -38px !important;
     }
+
+        //--mailing-list----//
+        #EmailService_wrapper{
+            .Form_Btn_wrapper .F_btn1 input {
+                font-size: 15px;
+                padding: .5rem 1.8rem!important;
+            }
+            .Camp_heading{
+                h2 {
+                    font-size: 1.8rem;
+                } 
+                a {
+                    padding: .5rem .9rem!important;
+                    font-size: 15px;
+                }  
+            } 
+        }
 }
 
 @media only screen and (max-width:1024px){
@@ -169,6 +220,54 @@
         left: 263px!important;
         top: 24px;
     }
+
+   //--mailing-list----//
+   #EmailService_wrapper{
+        .main-bar {
+            right: 25px;
+            top: 13px;
+        }
+        // .activefile {
+        //     right: 25px;
+        //     top: 23px;
+        // }
+        li.Camp_Item1 {
+            margin: 2rem 0 0!important;
+        }        
+        a.closebtn {
+            position: absolute;
+            font-size: 2rem;
+            color: #fff;
+            right: 16px;
+            z-index: 2;
+            transition: all .3s ease-in-out;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+            &:hover{
+               transition: all .3s ease-in-out;
+               transform: rotate(360deg);
+               opacity: .88;
+            }
+        }
+        #Sift1 {
+            transition: margin-left .5s;
+            padding: 16px;
+         }
+         #sidebar {
+         height: 100%;
+         width: 0!important;
+         position: fixed;
+         z-index: 4;
+         left: 0;
+         overflow-x: hidden;
+         transition: 0.5s;
+      }
+    .CampL2 {
+     width: 100%!important;
+     padding: 2rem 0 0 1rem!important;
+ }
+   }
 }
 
 @media only screen and(max-width:992px){
@@ -189,6 +288,38 @@
     .marketing_tool::before {
         height: 110px;
     }
+        //--mailing-list----//
+        #EmailService_wrapper{
+            .nav-item {
+                position: absolute;
+                top: 58px;
+                background: #000;
+                width: 70%;
+                left: 0;
+                padding: .95rem 0;
+                z-index: 2;
+                ul{
+                 justify-content: flex-start;
+                     padding: 0 0 0 13px;
+                }
+            }
+            .Right_side.Nv_cmn{
+                .ul01{
+                    position: absolute;
+                    top: 58px;background: #000;
+                    z-index: 1; padding: 1rem 13px 1rem 0;
+                    width: 40%;
+                    right: 0;
+                }
+            }
+            .CampL2{
+                padding: 4rem 0 0 1rem !important;
+            }
+            .Search_form {
+                width: 100%!important;
+            }
+        }
+    
 }
 @media only screen and(max-width:767px){
     .container, .container-sm{
@@ -319,6 +450,74 @@
         letter-spacing: 0.2rem;
     }
     //----end---here-----// 
+        //--mailing-list----//
+        #EmailService_wrapper{
+            .Right_side.Nv_cmn{
+                 .ul01 {
+                   margin: 0!important;
+              }
+           }
+           #Sift1{
+             margin-left: 0px!important  ;
+           }
+           .nav-item {
+            width: 66%;
+           }
+           .Right_side.Nv_cmn .ul01 {
+            padding: 1rem 13px 2.87rem 0;
+          }
+          .Campaign_content .CampL2 {
+            .Camp_heading {
+                h2 {
+                font-size: 1.5rem!important;
+                padding: 3rem 0 0;
+             }
+             a {
+                font-size: 14px;
+            }
+            }
+          }
+          .Search_form {
+            width: 416px!important;
+        }
+        }
+
+            //---incative--page----//
+    .Inactive_page_wrapper{
+        .Main_Campaign{
+        .Campaign_content{
+            .CampL2 {
+                padding: 0rem 0 0 1rem !important;
+                .Camp_heading {
+                    padding: 2rem 0 0;
+                    h2 {
+                        font-size: 1.4rem !important;
+                        padding: 1rem 0 0!important;
+                    }
+                }
+                .Camp_Content .Child_Camp2 .main_update_list .child_update .undate_list_cmn01 .heading h5 {
+                    font-size: 15px;
+                }
+                .Camp_Content .Child_Camp2 .main_update_list .child_update .undate_list_cmn01 .F_list_cmn label {
+                    font-size: 14px;
+                }
+                .Camp_Content .Child_Camp2 .main_update_list .child_update .undate_list_cmn01 .Fsubmit input{
+                  margin: 1.5rem 0 0rem;
+                }
+             }
+           }
+       }
+       .CampL2 .Camp_Content .Child_Camp2 .main_update_list .child_update {
+        width: 100%;
+    }
+    .CampL2 .Update_list02 .manage_incative02 .manage_btns .A01_btn a {
+        margin: .5rem .5rem 1rem;
+        display: inline-block;
+    }
+    .CampL2 .Camp_Content .Child_Camp2 .main_update_list .child_update .undate_list_cmn01{
+        flex-wrap: nowrap!important;
+    }
+    }
 }
 @media (min-width: 576px){
     .container, .container-sm {
@@ -569,6 +768,85 @@
         margin: 0 0 1rem;
     }
     //-----login---end--here---//
+
+    //--mailing-list----//
+    #EmailService_wrapper{
+        .nav-item,.ul01{
+            display: none!important;
+            visibility: hidden!important;
+        }
+        .Right_side.Nv_cmn .ul01 {
+            padding: 1rem 13px 2.23rem 0;
+        }
+        .Sub_wrp{
+             .F0002_cmn02{
+               width: 100%!important;
+              }
+         }
+         .Main_Campaign .Campaign_content .CampL2 .Camp_Content .Child_Camp1 .Sub_wrp .F02{
+            justify-content: center!important;
+            .Option select{
+                font-size: 14px;
+            }
+         }
+         .Camp_heading {
+            width: 100%;
+            text-align: center;
+        }
+        .Main_Campaign .Campaign_content .CampL2 .Camp_Content .Child_Camp1 .Main-User_field .Child_userField .Setting-child {
+            width: 95%!important;
+        }
+        .Main_Campaign .Campaign_content .CampL2 .Copy--right .Content .Cpy_cmn02{
+            justify-content: center!important;    width: 100%!important;
+        }
+        .Campaign_content .CampL2 .Camp_heading h2 {
+            font-size: 1.5rem !important;
+            padding: 0rem 0 0;
+        }
+        .Search_form{
+            width: 100%!important;
+        }
+    }
+            //---incative--page----//
+            .Inactive_page_wrapper{
+                .Main_Campaign .Campaign_content .CampL2{          
+                  margin: 0rem 0 0 auto !important;
+                }
+                .Campaign_content .CampL2 .Camp_heading h2 {
+                    font-size: 1.3rem !important;
+                }
+                .CampL2 .Camp_Content .Sub_wrp .Unsbscibe_wrp a{
+                    font-size: 14px;
+                }
+                .CampL2 .Camp_Content .Sub_wrp .data_wrp p {
+                    font-size: 1rem;
+                }
+                .Search_form{
+                    width: 100%!important;
+                }    
+                .Camp_Content .Child_Camp2 .main_update_list .child_update .undate_list_cmn01 .heading h5 {
+                    font-size: 15px;
+                }
+                .Camp_Content .Child_Camp2 .main_update_list .child_update .undate_list_cmn01 .F_list_cmn label {
+                    font-size: 14px;
+                }
+                .Camp_Content .Child_Camp2 .main_update_list .child_update .undate_list_cmn01 .Fsubmit input{
+                  margin: 1.5rem 0 0rem;
+                  padding: .5rem 2.4rem;
+                }  
+                .CampL2 .Update_list02 .manage_incative02 .manage_btns .A01_btn a{
+                    padding: 0.5rem 1.6rem 0.5rem 1rem;
+                }      
+                .CampL2 .Update_list02 .manage_incative02 .manage_btns{
+                    margin: 1rem 0 .5rem;
+                    justify-content: center!important;
+                    text-align: center;
+                }
+                .CampL2  .Camp_Content .Child_Camp2 .main_update_list .child_update .undate_list_cmn01 .incative_cmn0 {
+                    min-width: 80px;
+                }
+            }
+            
 }
 
 @media only screen and(max-width:375px){
@@ -597,4 +875,26 @@
             margin: 0;
             line-height: 1.5;
         }
+        
+    //--mailing-list----//
+    #EmailService_wrapper{
+        .nav-item,.ul01{
+            display: none!important;
+            visibility: hidden!important;
+        }
+        .Main_Campaign .Campaign_content .CampL2 {
+            padding: 2rem 0 0 1rem !important;
+        }
+        .Main_Campaign .Campaign_content .CampL2 .Camp_Content .Child_Camp1 .Sub_wrp .F01 .Search_form{
+            width: 100%!important;
+        }
+        .Main_Campaign .Campaign_content .CampL1 ul li.Camp_Item1 a i.fas.fa-chevron-down {
+            margin-left: 27px;
+            padding: 10px .5rem 10px 1.3rem;
+        }
+        .Main_Campaign .Campaign_content .CampL2 .Camp_Content .Child_Camp1 .Main-User_field .Child_userField #Setting-child1{
+            bottom: -52px !important;
+        }
+
+    }
 }

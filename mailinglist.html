@@ -32,7 +32,7 @@
                     
                    </div>
                    <div class="Right_side  Nv_cmn">
-                       <ul class="m-0">
+                       <ul class="m-0 ul01">
                            <li class="Send_Sms"><a href="#" class="hvr-underline-from-left">Send Sms</a></li>
                            <li><a href="#" class="UserPro" title="profile">P</a></li>
                            <!--user---profile -->
@@ -58,6 +58,11 @@
                             </div>
                             <!-- end---here -->
                        </ul>
+                       <div class="main-bar" class="openbtn" onclick="openNav()">
+                        <div class="a1"></div>
+                        <div class="b1"></div>
+                        <div class="c1"></div>
+                    </div>
                    </div>
                 </nav>
             </div>
@@ -66,7 +71,8 @@
     <section class="Main_Campaign">
      <div class="container-fluid pl-0 ml-0">
          <div class="Campaign_content">
-             <div class="CampL1 Camp_cmn02" >
+             <div class="CampL1 Camp_cmn02" id="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                  <ul>
                      <li class="Camp_Item1">
                          <a href="AddCamp.html">Create a campaign
@@ -95,7 +101,7 @@
                         <i class="fas fa-money-check"></i>pricing Plans</a></li>
                  </ul>
              </div>
-             <div class="CampL2 Camp_cmn02">
+             <div class="CampL2 Camp_cmn02" id="Sift1">
                    <div class="Camp_heading">
                        <h2>Mailing Lists</h2>
                        <a href="#" class="a1">New Mailing List</a>
@@ -325,5 +331,36 @@
       <script src="js/main.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script>
+        // function openNav() {
+        // var sidebar =  document.querySelectorAll("#sidebar");
+        // var c2 = document.querySelectorAll(".CampL2");
+        // var sift  =    document.getElementById("Sift1");//.style.marginLeft = "250px";
+        //   sidebar[0].style = "width:250px !important";
+        //  // debugger
+        // //   c2.style.padding="2rem 0 0 1rem";
+        //   sift.style ="margin-left :250px";
+          
+        // }
+        
+        // function closeNav() {
+        //   document.getElementById("sidebar").style.width = "0";
+        // var sift  =  document.getElementById("Sift1");//.style.marginLeft= "13px";
+        // //    sift.style ="padding-top : 0rem !important";
+        //    sift.style = "margin-left : 13px"
+        // }
+        </script>
+        <!-- <script>
+            $(".main-bar").click(function(event){
+                $("#Sift1").css("margin-left","250px");
+                $("#sidebar").css("width","250px");
+            });
+            $(".main-bar.activefile").click(function(){
+                debugger
+                $("#sidebar").css("width","0");
+                debugger
+                $("#Sift1").css("margin-left","13px");
+            });
+        </script> -->
     </body>
 </html>
